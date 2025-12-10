@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ModeloComportamiento.css">
+</head>
+
+<header class="navbar"> 
+  <div class="logo"></div>
+
+  <nav>
+    <ul class="menu">
+
+      <li><a href="index.html">Inicio</a></li>
+
+      <!-- MARCO TEÓRICO -->
+      <li class="dropdown">
+        <a href="teoria.html">Marco Teórico ↓</a>
+        <ul class="submenu">
+          <li><a href="teoria.html#intro">Introducción</a></li>
+          <li><a href="teoria.html#antecedentes">Antecedentes</a></li>
+          <li><a href="teoria.html#planteamiento">Planteamiento del Problema</a></li>
+          <li><a href="teoria.html#arbol">Árbol del Problema</a></li>
+          <li><a href="teoria.html#formulacion">Formulación del Problema</a></li>
+          <li><a href="teoria.html#proposito">Propósito del Estudio</a></li>
+          <li><a href="teoria.html#metodologia">Metodología</a></li>
+          <li><a href="teoria.html#planificacion">Planificación de Actividades</a></li>
+        </ul>
+      </li>
+
+      <!-- ANALISIS ESTRUCTURADO -->
+      <li class="dropdown">
+        <a id="active" href="ModeloAmbiente.html">Análisis Estructurado ↓</a>
+        <ul class="submenu">
+
+          <!-- MODELO AMBIENTAL -->
+          <li class="submenu-right">
+            <a href="ModeloAmbiente.html">Modelo Ambiental ▸</a>
+            <ul class="submenu-level-2">
+              <li><a href="ModeloAmbiente.html#Declaracion">Declaración de Propósitos</a></li>
+              <li><a href="ModeloAmbiente.html#diagrama">Diagrama de Contexto</a></li>
+              <li><a href="ModeloAmbiente.html#lista">Lista de Acontecimientos</a></li>
+            </ul>
+          </li>
+
+          <!-- MODELO DE COMPORTAMIENTO -->
+          <li class="submenu-right">
+            <a href="ModeloComportamiento.html">Modelo de Comportamiento ▸</a>
+            <ul class="submenu-level-2">
+              <li><a href="ModeloComportamiento.html#DFD">DFD por Niveles</a></li>
+              <li><a href="ModeloComportamiento.html#DER">DER</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </li>
+
+      <li><a href="OrientadoAObjetos.html">Orientado a Objetos</a></li>
+      <li><a href="video.html">Videos</a></li>
+      <li><a href="anexos.html">Anexos</a></li>
+      <li><a href="#">ChatBot</a></li>
+
+    </ul>
+  </nav>
+</header>
+
+<body>
+
+<div class="layout">
+
+  <!-- ÍNDICE LATERAL -->
+  <aside class="sidebar">
+    <h2>Analisis Estructurado</h2>
+    <h3>Modelo Ambiental</h3>
+    <ul>
+      <li><a href="ModeloAmbiente.html#Declaracion">Declaracion de Propósito</a></li>
+      <li><a href="ModeloAmbiente.html#diagrama">Diagrama de Contexto</a></li>
+      <li><a href="ModeloAmbiente.html#lista">Lista de Acontecimientos</a></li>
+    </ul>
+    <h3>Modelo Comportamiento</h3>
+    <ul>
+      <li><a href="#DFD">DFD por Niveles</a></li>
+      <li><a href="#DER">DER</a></li>
+    </ul>
+  </aside>
+
+  <!-- CONTENIDO -->
+  <main class="content">
+
+    <section id="DFD" class="box">
+      <h2>DFD - Diagrama de Flujo de Datos por Niveles</h2>
+      <h2>Nivel 0</h2>
+      <img id="imgDFD" src="imgs/0.jpeg" alt="">
+
+      <h2>Nivel 1</h2>
+      <img id="imgDFD" src="imgs/1.jpeg" alt="">
+
+      <h2>Nivel 2</h2>
+      <img id="imgDFD" src="imgs/2.jpeg" alt="">
+    </section>
+
+    <section id="DER" class="box">
+      <h2>DER - Diagrama Entidad-Relación</h2>
+      <img id="imgDFD" src="imgs/ER.png" alt="">
+    </section>
+
+
+    
+  </main>
+
+</div>
+
+</body>
+
+
+</html>

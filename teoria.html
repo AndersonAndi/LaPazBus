@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="teoria.css">
+</head>
+
+<header class="navbar">
+  <div class="logo"></div>
+
+  <nav>
+    <ul class="menu">
+
+      <li><a href="index.html">Inicio</a></li>
+
+      <!-- MARCO TEÓRICO -->
+      <li class="dropdown">
+        <a id="active" href="teoria.html">Marco Teórico ↓</a>
+        <ul class="submenu">
+          <li><a href="teoria.html#intro">Introducción</a></li>
+          <li><a href="teoria.html#antecedentes">Antecedentes</a></li>
+          <li><a href="teoria.html#planteamiento">Planteamiento del Problema</a></li>
+          <li><a href="teoria.html#arbol">Árbol del Problema</a></li>
+          <li><a href="teoria.html#formulacion">Formulación del Problema</a></li>
+          <li><a href="teoria.html#proposito">Propósito del Estudio</a></li>
+          <li><a href="teoria.html#metodologia">Metodología</a></li>
+          <li><a href="teoria.html#planificacion">Planificación de Actividades</a></li>
+        </ul>
+      </li>
+
+      <!-- ANALISIS ESTRUCTURADO -->
+      <li class="dropdown">
+        <a href="ModeloAmbiente.html">Análisis Estructurado ↓</a>
+        <ul class="submenu">
+
+          <!-- MODELO AMBIENTAL -->
+          <li class="submenu-right">
+            <a href="ModeloAmbiente.html">Modelo Ambiental ▸</a>
+            <ul class="submenu-level-2">
+              <li><a href="ModeloAmbiente.html#Declaracion">Declaración de Propósitos</a></li>
+              <li><a href="ModeloAmbiente.html#diagrama">Diagrama de Contexto</a></li>
+              <li><a href="ModeloAmbiente.html#lista">Lista de Acontecimientos</a></li>
+            </ul>
+          </li>
+
+          <!-- MODELO DE COMPORTAMIENTO -->
+          <li class="submenu-right">
+            <a href="ModeloComportamiento.html">Modelo de Comportamiento ▸</a>
+            <ul class="submenu-level-2">
+              <li><a href="ModeloComportamiento.html#DFD">DFD por Niveles</a></li>
+              <li><a href="ModeloComportamiento.html#DER">DER</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </li>
+
+      <li><a href="OrientadoAObjetos.html">Orientado a Objetos</a></li>
+      <li><a href="video.html">Videos</a></li>
+      <li><a href="anexos.html">Anexos</a></li>
+      <li><a href="#">ChatBot</a></li>
+
+    </ul>
+  </nav>
+</header>
+
+<body>
+
+<div class="layout">
+
+  <!-- ÍNDICE LATERAL -->
+  <aside class="sidebar">
+    <h2>Marco Teorico</h2>
+    <ul>
+      <li><a href="#intro">Introducción</a></li>
+      <li><a href="#antecedentes">Antecedentes</a></li>
+      <li><a href="#planteamiento">Planteamiento del Problema</a></li>
+      <li><a href="#arbol">Árbol del Problema</a></li>
+      <li><a href="#formulacion">Formulación del Problema</a></li>
+      <li><a href="#proposito">Propósito del Estudio</a></li>
+      <li><a href="#metodologia">Metodología</a></li>
+      <li><a href="#planificacion">Planificación de Actividades</a></li>
+    </ul>
+  </aside>
+
+  <!-- CONTENIDO -->
+  <main class="content">
+
+    <section id="intro" class="box">
+      <h2>Introducción</h2>
+      <p>El transporte público constituye un eje fundamental en la movilidad urbana, ya que
+permite a miles de ciudadanos desplazarse diariamente de manera accesible y eficiente. En
+este contexto, la Alcaldía de La Paz ha implementado una aplicación móvil destinada a brindar
+información sobre rutas, horarios, tarifas y anuncios relacionados con el servicio de transporte
+municipal.</p>
+
+<p>Sin embargo, la experiencia de los usuarios con la aplicación no ha sido del todo
+satisfactoria. Se han identificado dificultades en la navegación, fallos en ciertas funciones y una
+interfaz que no resulta lo suficientemente intuitiva para todos los perfiles de usuarios. Estas
+limitaciones han derivado en una escasa adopción de la aplicación como herramienta confiable
+y en una percepción negativa de los servicios digitales municipales, lo que afecta la credibilidad
+de los esfuerzos de modernización tecnológica de la institución.</p>
+
+
+<p>Este proyecto busca analizar la aplicación existente, identificar sus principales
+problemas de usabilidad y proponer mejoras en el diseño de la interfaz y en la experiencia de
+usuario. Con ello se pretende no solo optimizar la interacción de los ciudadanos con la
+aplicación, sino también fortalecer la confianza en los servicios digitales municipales y fomentar
+una mayor adopción de la herramienta.</p>
+
+    </section>
+
+    <section id="antecedentes" class="box">
+      <h2>Antecedentes</h2>
+      <p>En los últimos años, diversas ciudades del mundo han apostado por el desarrollo de
+aplicaciones móviles que faciliten la gestión del transporte público. Ejemplos como Moovit,
+Google Maps Transit o aplicaciones municipales en Medellín y Ciudad de México han
+demostrado que la clave del éxito radica en interfaces simples, accesibles y centradas en el
+usuario.</p>
+<p>En el caso de La Paz, la Alcaldía implementó una aplicación oficial con el objetivo de
+acercar la información del transporte público a la ciudadanía. La aplicación incluye funciones
+como consulta de rutas, horarios, tarifas, anuncios de servicio y canales de atención al usuario.
+No obstante, a pesar de su potencial, la herramienta no ha alcanzado el nivel de aceptación
+esperado.</p>
+<p>Las principales críticas de los usuarios se centran en la complejidad de la interfaz, la
+dificultad para acceder rápidamente a la información deseada y la presencia de fallos técnicos
+que afectan la confiabilidad del sistema. Como resultado, gran parte de la población opta por
+recurrir a medios tradicionales de información, lo que limita el impacto de la aplicación y
+refuerza la percepción de que los servicios digitales municipales no cumplen con los
+estándares de calidad que la ciudadanía demanda.</p>
+
+    </section>
+
+    <section id="planteamiento" class="box">
+      <h2>Planteamiento del Problema</h2>
+      <p>La aplicación móvil de la Alcaldía destinada a la gestión del transporte público en La
+Paz enfrenta serias limitaciones en cuanto a su usabilidad y confiabilidad. Aunque fue
+concebida como una herramienta para facilitar el acceso a información sobre rutas, horarios y
+tarifas, en la práctica no ha logrado consolidarse como un recurso confiable para la ciudadanía.</p>
+<p> La escasa adopción de la aplicación se debe a que muchos usuarios perciben
+dificultades al navegar por la interfaz, encuentran fallos en ciertas funciones y consideran que
+la experiencia de uso no es lo suficientemente intuitiva. Esto provoca que gran parte de la
+población prefiera recurrir a medios tradicionales (consultas presenciales, llamadas telefónicas
+o información informal) en lugar de utilizar la aplicación.</p>
+<p>Como consecuencia, se genera una percepción negativa de los servicios digitales
+municipales, ya que la aplicación, en lugar de fortalecer la confianza en la modernización
+tecnológica de la Alcaldía, transmite la idea de que las soluciones digitales ofrecidas carecen
+de calidad, mantenimiento y orientación al usuario. Esta percepción afecta no solo la imagen de
+la aplicación en sí, sino también la credibilidad de otros proyectos tecnológicos impulsados por
+la institución.</p>
+
+<p>En síntesis, el problema central radica en que la aplicación de transporte público no
+cumple con las expectativas de los ciudadanos en términos de confiabilidad, facilidad de uso y
+valor práctico, lo que limita su impacto y debilita la confianza en la gestión digital municipal.</p>
+
+    </section>
+
+    <section id="arbol" class="box">
+      <h2>Árbol del Problema</h2>
+      <img id="arbol" src="imgs/arbol.png" alt="Arbol-Problema">
+    </section>
+
+    <section id="formulacion" class="box">
+      <h2>Formulación del Problema</h2>
+      <p>Los ciudadanos de La Paz experimentan dificultades al utilizar la aplicación móvil de
+transporte público debido a su baja usabilidad, errores funcionales y falta de diseño centrado en
+el usuario, lo que reduce la confianza en los servicios digitales municipales y limita la adopción
+de la herramienta.</p>
+    </section>
+
+    <section id="proposito" class="box">
+      <h2>Propósito del Estudio</h2>
+      <p>El propósito general de este estudio es analizar la usabilidad, confiabilidad y diseño
+funcional de la aplicación móvil del Servicio de Transporte Municipal de La Paz, con el fin de
+identificar los principales problemas que limitan su adopción ciudadana y proponer mejoras
+técnicas y de experiencia de usuario.</p>
+<p>Este estudio busca contribuir a los esfuerzos de modernización tecnológica de la
+Alcaldía de La Paz, fortaleciendo la confianza ciudadana en los servicios digitales municipales y
+promoviendo un modelo de aplicación centrada en las necesidades reales de los usuarios del
+transporte público.</p>
+
+    </section>
+
+    <section id="metodologia" class="box">
+      <h2>Metodología</h2>
+      <p>•	Cualitativo: se enfocará en la percepción y comportamiento de los usuarios a través de entrevistas semiestructuradas y observación directa del uso de la aplicación.</p>
+      <p>•	Cuantitativo: se obtendrán datos mediante encuestas, mediciones de tiempo de uso, frecuencia de fallos y análisis de métricas de interacción.</p>
+
+
+    </section>
+
+    <section id="planificacion" class="box">
+      <h2>Planificación de Actividades</h2>
+      <h2>Diagrama de GANTT</h2>
+      <img id="arbol" src="imgs/plan.png" alt="Diagrama-GANTT">
+    </section>
+
+  </main>
+
+</div>
+
+</body>
+
+
+</html>

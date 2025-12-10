@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ModeloAmbiente.css">
+</head>
+
+<header class="navbar">
+  <div class="logo"></div>
+
+  <nav>
+    <ul class="menu">
+
+      <li><a href="index.html">Inicio</a></li>
+
+      <!-- MARCO TEÓRICO -->
+      <li class="dropdown">
+        <a href="teoria.html">Marco Teórico ↓</a>
+        <ul class="submenu">
+          <li><a href="teoria.html#intro">Introducción</a></li>
+          <li><a href="teoria.html#antecedentes">Antecedentes</a></li>
+          <li><a href="teoria.html#planteamiento">Planteamiento del Problema</a></li>
+          <li><a href="teoria.html#arbol">Árbol del Problema</a></li>
+          <li><a href="teoria.html#formulacion">Formulación del Problema</a></li>
+          <li><a href="teoria.html#proposito">Propósito del Estudio</a></li>
+          <li><a href="teoria.html#metodologia">Metodología</a></li>
+          <li><a href="teoria.html#planificacion">Planificación de Actividades</a></li>
+        </ul>
+      </li>
+
+      <!-- ANALISIS ESTRUCTURADO -->
+      <li class="dropdown">
+        <a id="active" href="ModeloAmbiente.html">Análisis Estructurado ↓</a>
+        <ul class="submenu">
+
+          <!-- MODELO AMBIENTAL -->
+          <li class="submenu-right">
+            <a href="ModeloAmbiente.html">Modelo Ambiental ▸</a>
+            <ul class="submenu-level-2">
+              <li><a href="ModeloAmbiente.html#Declaracion">Declaración de Propósitos</a></li>
+              <li><a href="ModeloAmbiente.html#diagrama">Diagrama de Contexto</a></li>
+              <li><a href="ModeloAmbiente.html#lista">Lista de Acontecimientos</a></li>
+            </ul>
+          </li>
+
+          <!-- MODELO DE COMPORTAMIENTO -->
+          <li class="submenu-right">
+            <a href="ModeloComportamiento.html">Modelo de Comportamiento ▸</a>
+            <ul class="submenu-level-2">
+              <li><a href="ModeloComportamiento.html#DFD">DFD por Niveles</a></li>
+              <li><a href="ModeloComportamiento.html#DER">DER</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </li>
+
+      <li><a href="OrientadoAObjetos.html">Orientado a Objetos</a></li>
+      <li><a href="video.html">Videos</a></li>
+      <li><a href="anexos.html">Anexos</a></li>
+      <li><a href="#">ChatBot</a></li>
+
+    </ul>
+  </nav>
+</header>
+
+<body>
+
+<div class="layout">
+
+  <!-- ÍNDICE LATERAL -->
+  <aside class="sidebar">
+    <h2>Analisis Estructurado</h2>
+    <h3>Modelo Ambiental</h3>
+    <ul>
+      <li><a href="#Declaracion">Declaracion de Propósito</a></li>
+      <li><a href="#diagrama">Diagrama de Contexto</a></li>
+      <li><a href="#lista">Lista de Acontecimientos</a></li>
+    </ul>
+    <h3>Modelo Comportamiento</h3>
+    <ul>
+      <li><a href="ModeloComportamiento.html#DFD">DFD por Niveles</a></li>
+      <li><a href="ModeloComportamiento.html#DER">DER</a></li>
+    </ul>
+  </aside>
+
+  <!-- CONTENIDO -->
+  <main class="content">
+
+    <section id="Declaracion" class="box">
+      <h2>Declaración de Propósitos</h2>
+      <p>El propósito del sistema del Servicio de Transporte Municipal (STM) es gestionar,
+controlar y optimizar las operaciones administrativas, financieras y operativas relacionadas con
+el transporte público municipal.
+</p>
+    </section>
+
+    <section id="diagrama" class="box">
+      <h2>Diagrama de Contexto</h2>
+      <img id="Ambiente" src="imgs/ambiental1.png" alt="Modelo Ambiental - Diagrama de Contexto">
+    </section>
+
+    <section id="lista" class="box">
+      <h2>Lista de Acontecimientos</h2>
+      <table>
+        <!-- Fila de encabezado (opcional, pero útil para contexto) -->
+        <thead>
+            <tr>
+                <th>Nº</th>
+                <th>Acontecimiento</th>
+                <th>Tipo (E/S)</th>
+                <th>Descripción breve</th>
+            </tr>
+        </thead>
+        <!-- Cuerpo de la tabla (11 filas) -->
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>El ciudadano paga su tarifa
+de transporte</td>
+                <td>E</td>
+                <td>El sistema registra el pago y
+actualiza los ingresos.
+</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>El ciudadano presenta una
+solicitud o reclamo</td>
+                <td>E</td>
+                <td>El sistema almacena la información
+para atención al ciudadano.
+</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Se registra la recaudación
+diaria</td>
+                <td>E</td>
+                <td>La unidad de recaudación ingresa
+los datos al sistema.
+</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>El sistema genera reporte
+financiero
+</td>
+                <td>S</td>
+                <td>La sección administrativa recibe
+reportes de ingresos y gastos.
+</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Se programa el
+mantenimiento de
+vehículos</td>
+                <td>E</td>
+                <td>La unidad de mantenimiento envía
+el cronograma al sistema.</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>El sistema alerta sobre
+mantenimiento pendiente
+</td>
+                <td>S</td>
+                <td>Se notifica a la unidad de
+mantenimiento automotriz.</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>La dirección general solicita
+reporte de gestión</td>
+                <td>E</td>
+                <td>El sistema genera un informe
+consolidado del STM.</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>El gobierno municipal solicita
+datos de operación</td>
+                <td>E</td>
+                <td>El sistema entrega informes y
+estadísticas del servicio.</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Se actualiza la información
+de personal
+</td>
+                <td>E</td>
+                <td>La unidad de servicios generales y
+personal modifica los registros.</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>El sistema envía informe de
+planificación y control</td>
+                <td>S</td>
+                <td>Entregado a la Dirección de
+Administración y Recaudo.
+</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    </section>
+
+    
+  </main>
+
+</div>
+
+</body>
+
+
+</html>

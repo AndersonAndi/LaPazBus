@@ -1,0 +1,285 @@
+/* ===================== */
+/* VARIABLES MODERNAS */
+/* ===================== */
+:root {
+  --color-bg: #ffffff;
+  --color-text: #111;
+  --color-primary: #0b63f6;
+  --color-hover: #0b63f6;
+  --submenu-bg: #f5f5f5;
+  --shadow: rgba(0,0,0,0.15);
+}
+
+/* Modo oscuro opcional */
+.dark-mode {
+  --color-bg: #111;
+  --color-text: #eee;
+  --color-primary: #4da3ff;
+  --submenu-bg: #1d1d1d;
+}
+
+/* ===================== */
+/* ESTILOS DEL NAVBAR */
+/* ===================== */
+
+.navbar {
+  /*width: 100%;*/
+  background: var(--color-bg);
+  color: var(--color-text);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+
+  background-image: url('imgs/app.jpg');
+  border-radius: 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 60px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--color-text);
+  padding: 10px;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+/* Hover principal */
+.menu > li:hover > a {
+  color: var(--p1);
+}
+
+#active{
+  color: var(--p1);
+}
+/* ===================== */
+/* SUBMENÚS */
+/* ===================== */
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--submenu-bg);
+  list-style: none;
+  min-width: 220px;
+  box-shadow: 0 2px 10px var(--shadow);
+  border-radius: 6px;
+  padding: 10px 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.25s ease-in-out;
+}
+
+.dropdown:hover .submenu {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Items del submenu */
+.submenu li a {
+  display: block;
+  padding: 10px 18px;
+}
+
+.submenu li:hover > a {
+  background: var(--p1);
+  color: white;
+}
+
+/* ===================== */
+/* SUBMENÚ A LA DERECHA */
+/* ===================== */
+
+.submenu-right {
+  position: relative;
+}
+
+.submenu-level-2 {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background: var(--submenu-bg);
+  min-width: 220px;
+  list-style: none;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px var(--shadow);
+  padding: 10px 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.25s ease;
+}
+
+.submenu-right:hover .submenu-level-2 {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ========================= */
+/* 🎨 Paleta personalizada   */
+/* ========================= */
+:root {
+  --p1: #40cac7;
+  --p2: #7cd4dd;
+  --p3: #dc6697;
+  --p4: #f6f8f3;
+  --p5: #0d6569;
+
+  --glass-bg: rgba(13, 101, 105, 0.55);
+}
+
+/* ========================= */
+/* 🌄 Fondo del body         */
+/* ========================= */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: url("imgs/Fondo2.png") no-repeat center center/cover;
+  color: var(--p4);
+}
+
+/* =============================== */
+/* 📌 LAYOUT PRINCIPAL             */
+/* =============================== */
+
+.layout {
+  display: flex;
+  padding-top: 0px;
+  /*backdrop-filter: blur(3px);*/
+}
+
+/* =============================== */
+/* 📚 SIDEBAR (Índice)             */
+/* =============================== */
+
+.sidebar {
+  width: 260px;
+  background: rgba(13, 101, 105, 0.65); /* var(--p5) */
+  padding: 25px;
+  color: var(--p4);
+  height: 100vh;
+  position: sticky;
+  top: 80px;
+  border-right: 3px solid var(--p1);
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--p2);
+}
+
+.sidebar h3 {
+  margin-top: 40px;
+  margin-bottom: 0px;
+  color: var(--p2);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 12px;
+}
+
+.sidebar ul a {
+  text-decoration: none;
+  color: var(--p4);
+  font-size: 16px;
+  padding: 8px 10px;
+  display: block;
+  border-radius: 6px;
+  transition: 0.30s;
+}
+
+.sidebar ul a:hover {
+  background: var(--p1);
+  color: white;
+}
+
+/* =============================== */
+/* 📦 CONTENIDO PRINCIPAL          */
+/* =============================== */
+
+.content {
+  flex: 1;
+  padding: 40px;
+  margin-left: 10px;
+}
+
+.box {
+  background: var(--glass-bg);
+  padding: 30px;
+  margin-bottom: 35px;
+  border-radius: 16px;
+  border-left: 5px solid var(--p1);
+  color: var(--p4);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  scroll-margin-top: 120px;
+}
+
+.box h2 {
+  color: var(--p2);
+  margin-top: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#Ambiente {
+  border-radius: 50px;
+}
+
+/* ===================== */
+
+table {
+    /* Elimina el espacio entre bordes de celdas adyacentes */
+    border-collapse: collapse; 
+    width: 100%;
+}
+
+th, td {
+    /* Establece el borde de todas las celdas y encabezados a 0px */
+    border: 0px solid transparent; 
+    text-align: left;
+    padding: 8px; /* Añade un poco de espacio interno para legibilidad */
+}
+
+/* Opcional: añade un fondo sutil a las filas pares para una mejor lectura */
+tr:nth-child(even) {
+    background-color: var(--p1);
+}
+
+/* Opcional: estilo para los encabezados */
+th {
+    background-color: var(--p1); /* Color de fondo blanco para que no resalte */
+    color: black;
+}
+
+
