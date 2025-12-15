@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Paz Bus</title>
+    <title>OO</title>
     <link rel="stylesheet" href="OrientadoAObjetos.css">
 </head>
 
@@ -57,10 +57,19 @@
         </ul>
       </li>
 
-      <li><a id="active" href="OrientadoAObjetos.html">Orientado a Objetos</a></li>
+      <li class="dropdown">
+        <a id="active" href="OrientadoAObjetos.html">Orientado a Objetos ↓</a>
+        <ul class="submenu">
+          <li><a href="OrientadoAObjetos.html#Estructura">Estructura General</a></li>
+          <li><a href="OrientadoAObjetos.html#Relacion">Relacion y principios OO aplicados</a></li>
+          <li><a href="OrientadoAObjetos.html#DiagramaOO">Diagrama de Clases</a></li>
+          <li><a href="OrientadoAObjetos.html#DiagramaSecuencia">Diagrama de Secuencia</a></li>
+          <li><a href="OrientadoAObjetos.html#DiagramaCasosUso">Diagrama de Casos de Uso</a></li>
+        </ul>
+      </li>
       <li><a href="video.html">Videos</a></li>
       <li><a href="anexos.html">Anexos</a></li>
-      
+
 
     </ul>
   </nav>
@@ -68,12 +77,95 @@
 
 <body>
 
-  <section class="hero">
+<div class="layout">
+
+  <!-- ÍNDICE LATERAL -->
+  <aside class="sidebar">
+    <h2>Analisis y Diseño <br> Orientado A Objetos</h2>
+    <ul>
+      <li><a href="#Estructura">Estructura General</a></li>
+      <li><a href="#Relacion">Relacion y principios OO aplicados</a></li>
+      <li><a href="#DiagramaOO">Diagrama de Clases</a></li>
+      <li><a href="#DiagramaSecuencia">Diagrama de Secuencia</a></li>
+      <li><a href="#DiagramaCasosUso">Diagrama de Casos de Uso</a></li>
+    </ul>
+  </aside>
+
+  <!-- CONTENIDO -->
+  <main class="content">
+
+    <section id="Estructura" class="box">
+      <h2>Estructura General</h2>
+      <p>•Clase base Persona: Define atributos comunes como ci, Nombre, Apellido,
+Dirección y Teléfono. Esta clase es heredada por Empleado, Conductor y
+Cliente, promoviendo reutilización y coherencia en la modelación. </p>
+<p>• Empleado: Hereda de Persona e incorpora atributos específicos como idEmpleado,
+Cargo y Horario, junto al método trabaja().</p>
+<p>• Conductor: Extiende Persona y se vincula directamente con las clases Ruta y Bus,
+indicando las rutas que cumple y el bus que conduce. Incluye métodos como
+conduce() y cumpleRutas().</p>
+<p>
+  • Cliente: También hereda de Persona, y se relaciona con Ruta y Bus, reflejando el
+proceso de abordaje, viaje y pago. Sus métodos (abordaCliente(),
+viajaCliente(), pagaPasajeCliente()) encapsulan el comportamiento del
+usuario del sistema.
+</p>
+
+<p>• Ruta: Contiene identificadores y paradas, con el método cumpleRuta() que valida el
+recorrido.</p>
+<p>• Bus: Define atributos como idBus, idConductor y Capacidad, representando los
+vehículos del sistema.</p>
+<p>• Informacion: Centraliza datos históricos, contacto y registros de conductores y buses.
+Se vincula con AtencionAlCliente para consulta de datos.</p>
+<p>• AtencionAlCliente: Gestiona la interacción entre Empleado y Cliente, ofreciendo
+atención e información mediante los métodos atiendeCliente() y
+brindaInformacion().</p>
+
+
+    </section>
+
+    <section id="Relacion" class="box">
+      <h2>Relacion y principios OO aplicados</h2>
+      <p>• Herencia: Empleado, Conductor y Cliente heredan de Persona, aplicando
+reutilización de atributos comunes.</p>
+      <p>• Asociaciones: Se modelan relaciones entre clases como Conductor–Bus, Cliente–
+Ruta, y Informacion–AtencionAlCliente.</p>
+        <p>• Encapsulamiento: Cada clase define atributos y métodos propios, promoviendo
+modularidad.</p>
+          <p>• Abstracción: Las clases representan entidades reales del sistema, simplificando su
+complejidad funcional.</p>
+
+
+    </section>
+
+    <section id="DiagramaOO" class="box">
     <div class="hero-content">
-      <h1>Diagrama de Clases</h1>
+      <h2>Diagrama de Clases</h2>
       <img id="oo" src="imgs/OO.jpeg" alt="Diagrama OrientadoAObjetos">
     </div>
   </section>
+
+  <section id="DiagramaSecuencia" class="box">
+    <div class="hero-content">
+      <h2>Diagrama de Secuencia</h2>
+      <img id="oo" src="imgs/Secuencia.jpg" alt="Diagrama Secuencia">
+    </div>
+  </section>
+
+  <section id="DiagramaCasosUso" class="box">
+    <div class="hero-content">
+      <h2>Diagrama de Casos de Uso</h2>
+      <img id="oo" src="imgs/CasosUso.jpg" alt="Diagrama Casos de Uso">
+    </div>
+  </section>
+
+    
+
+    
+
+  </main>
+
+</div>
 
 </body>
 

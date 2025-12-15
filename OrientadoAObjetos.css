@@ -147,6 +147,7 @@
   --p4: #f6f8f3;
   --p5: #0d6569;
 
+  --p6:rgba(64, 202, 200, 0.67);
   --glass-bg: rgba(13, 101, 105, 0.55);
 }
 
@@ -156,81 +157,100 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background: url("imgs/main.jpg") no-repeat center center/cover;
+  background: url("imgs/about-section.jpg") no-repeat center center/cover;
   color: var(--p4);
 }
 
-/* ========================= */
-/* 🟦 Sección hero            */
-/* ========================= */
-.hero {
-  width: 100%;
-  height: 100vh;
+/* =============================== */
+/* 📌 LAYOUT PRINCIPAL             */
+/* =============================== */
+
+.layout {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-
-  /* Degradado moderno */
-  background: linear-gradient(
-    to bottom right,
-    rgba(124, 212, 221, 0.25),
-    rgba(220, 102, 151, 0.30),
-    rgba(13, 101, 105, 0.25)
-  );
-  /*backdrop-filter: blur(4px);*/
+  padding-top: 0px;
+  /*backdrop-filter: blur(3px);*/
 }
 
-/* ========================= */
-/* 📦 Caja de contenido       */
-/* ========================= */
-.hero-content {
-  background: var(--glass-bg);
-  padding: 40px 70px;
-  border-radius: 20px;
-  text-align: center;
-  backdrop-filter: blur(6px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+/* =============================== */
+/* 📚 SIDEBAR (Índice)             */
+/* =============================== */
 
-  /* Borde degradado moderno */
-  border: 2px solid transparent;
-  background-clip: padding-box;
-  position: relative;
-}
-
-.hero-content::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 20px;
-  padding: 2px;
-  background: linear-gradient(45deg, var(--p1), var(--p3));
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-          mask-composite: exclude;
-}
-
-/* ========================= */
-/* 📝 Textos                  */
-/* ========================= */
-.hero-content h1 {
-  font-size: 55px;
-  margin: 0;
-  color: var(--p2);
-  text-shadow: 0 3px 12px rgba(0,0,0,0.4);
-  font-weight: 800;
-}
-
-.hero-content p {
-  margin-top: 15px;
-  font-size: 22px;
+.sidebar {
+  width: 260px;
+  background: rgba(13, 101, 105, 0.65); /* var(--p5) */
+  padding: 25px;
   color: var(--p4);
-  letter-spacing: 1px;
+  height: 100vh;
+  position: sticky;
+  top: 80px;
+  border-right: 3px solid var(--p1);
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
-#oo{
-  width: auto;
-  height: 70vh;
+.sidebar h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--p2);
 }
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 12px;
+}
+
+.sidebar ul a {
+  text-decoration: none;
+  color: var(--p4);
+  font-size: 16px;
+  padding: 8px 10px;
+  display: block;
+  border-radius: 6px;
+  transition: 0.30s;
+}
+
+.sidebar ul a:hover {
+  background: var(--p1);
+  color: white;
+}
+
+/* =============================== */
+/* 📦 CONTENIDO PRINCIPAL          */
+/* =============================== */
+
+.content {
+  flex: 1;
+  padding: 40px;
+  margin-left: 10px;
+}
+
+.box {
+  background: var(--glass-bg);
+  padding: 30px;
+  margin-bottom: 35px;
+  border-radius: 16px;
+  border-left: 5px solid var(--p1);
+  color: var(--p4);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  scroll-margin-top: 120px;
+}
+
+.box h2 {
+  color: var(--p2);
+  margin-top: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#arbol {
+  border-radius: 50px;
+  
+}
+
 
